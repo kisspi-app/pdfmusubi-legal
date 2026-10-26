@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="iPhoneアプリ「PDFむすび」のプライバシーポリシー">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>PDFむすび プライバシーポリシー</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root{
+    --bg: #faf7f1;
+    --surface: #ffffff;
+    --surface-line: #e7ded0;
+    --ink: #20302c;
+    --ink-soft: #52625c;
+    --ink-faint: #8a978f;
+    --teal: #0f6b62;
+    --teal-deep: #0a4a44;
+    --teal-wash: #e4efec;
+    --coral: #d9613f;
+    --coral-wash: #fbe9e2;
+    --font-display: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
+    --font-body: "Noto Sans JP", "Hiragino Sans", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #14201d;
+      --surface: #1a2925;
+      --surface-line: #2a3d37;
+      --ink: #eef3f0;
+      --ink-soft: #b6c4bd;
+      --ink-faint: #7d8d86;
+      --teal: #4fb3a6;
+      --teal-deep: #bfe9e1;
+      --teal-wash: #1f3733;
+      --coral: #e98a6c;
+      --coral-wash: #3a2620;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #14201d;
+    --surface: #1a2925;
+    --surface-line: #2a3d37;
+    --ink: #eef3f0;
+    --ink-soft: #b6c4bd;
+    --ink-faint: #7d8d86;
+    --teal: #4fb3a6;
+    --teal-deep: #bfe9e1;
+    --teal-wash: #1f3733;
+    --coral: #e98a6c;
+    --coral-wash: #3a2620;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.85;
+    padding-inline: 20px;
+    padding-block: 40px;
+  }
+  main{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .mark{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom: 28px;
+  }
+  .mark svg{ width:44px; height:44px; flex-shrink:0; }
+  .mark .name{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--teal-deep);
+    letter-spacing: .02em;
+  }
+  .mark .sub{
+    font-size: .78rem;
+    color: var(--ink-faint);
+    font-family: var(--font-mono);
+    letter-spacing: .04em;
+  }
+
+  header.hero{
+    border-bottom: 1px solid var(--surface-line);
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+  }
+  h1{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 5vw, 2.15rem);
+    color: var(--ink);
+    text-wrap: balance;
+    margin: 0 0 10px;
+  }
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 10px 20px;
+    font-size: .85rem;
+    color: var(--ink-soft);
+  }
+  .meta span{ font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink-faint); }
+
+  .lede{
+    background: var(--teal-wash);
+    border: 1px solid var(--surface-line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    color: var(--ink);
+    font-size: .96rem;
+    margin-bottom: 36px;
+  }
+  .lede strong{ color: var(--teal-deep); }
+
+  section{
+    margin-bottom: 34px;
+  }
+  section h2{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--teal-deep);
+    display:flex;
+    align-items:baseline;
+    gap: 10px;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  section h2 .num{
+    font-family: var(--font-mono);
+    font-size: .78rem;
+    color: var(--coral);
+    background: var(--coral-wash);
+    border-radius: 999px;
+    padding: 3px 9px;
+    font-variant-numeric: tabular-nums;
+  }
+  section p{ margin: 0 0 12px; color: var(--ink); max-width: 62ch; }
+  section p.soft{ color: var(--ink-soft); font-size: .92rem; }
+  section ul{ margin: 0 0 12px; padding-left: 1.3em; }
+  section li{ margin-bottom: 8px; max-width: 60ch; }
+  section li::marker{ color: var(--teal); }
+
+  .card{
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .card + .card{ margin-top: 12px; }
+  .card .label{
+    font-family: var(--font-mono);
+    font-size: .72rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 4px;
+  }
+  .card .value{ color: var(--ink); font-size: .95rem; }
+
+  a{ color: var(--teal); text-decoration-color: var(--surface-line); text-underline-offset: 3px; }
+  a:hover{ text-decoration-color: var(--teal); }
+
+  .contact{
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-radius: 16px;
+    padding: 24px;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    align-items:center;
+    justify-content: space-between;
+  }
+  .contact .who{ font-family: var(--font-display); font-weight:700; font-size:1.05rem; }
+  .contact .mail{
+    font-family: var(--font-mono);
+    font-size: .95rem;
+    color: var(--teal-deep);
+    background: var(--teal-wash);
+    padding: 8px 14px;
+    border-radius: 999px;
+  }
+
+  footer{
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--surface-line);
+    color: var(--ink-faint);
+    font-size: .8rem;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  @media (max-width: 480px){
+    .contact{ flex-direction:column; align-items:flex-start; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">
+    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="2" y="2" width="40" height="40" rx="11" fill="#0f6b62"/>
+      <rect x="12" y="10" width="14" height="18" rx="2.4" fill="#f3ede1"/>
+      <rect x="17" y="16" width="14" height="18" rx="2.4" fill="#f9f6ef" stroke="#0a4a44" stroke-width="1.2"/>
+      <path d="M17 25c3-2.6 7-2.6 10 0" stroke="#d9613f" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <path d="M18.5 22.5c2-1.6 5-1.6 7 0" stroke="#d9613f" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".75"/>
+    </svg>
+    <div>
+      <div class="name">PDFむすび</div>
+      <div class="sub">com.colorofdays.pdfmusubi</div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <h1>プライバシーポリシー</h1>
+    <div class="meta">
+      <span>制定日 2026-09-16</span>
+      <span>開発 colorofdays(個人開発)</span>
+    </div>
+  </header>
+
+  <div class="lede">
+    <strong>要点:</strong> PDFむすびは、アカウント登録やログインを必要とせず、結合・分割・圧縮・写真からのPDF化といったPDFの変換処理そのものは、すべてお使いの端末内だけで完結します。変換対象として選んだファイルや写真の内容が、これらの処理のために外部へ送信されることはありません。なお、広告の表示および購入処理に関しては、下記03・04の範囲で外部との通信が発生します。
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>収集する情報</h2>
+    <p>PDFむすびは、氏名・メールアドレス・位置情報などの個人情報の入力や登録を求めません。アプリ内で選択・撮影したPDFファイルや写真、それらから生成したPDFデータは、すべて端末内のストレージにのみ保存され、これらの変換処理のために開発者や第三者のサーバーへ送信・アップロードされることはありません。</p>
+    <p class="soft">結合・分割・圧縮・写真からのPDF化といったPDFの変換処理そのものは、いずれもオフラインで動作します(インターネット接続は不要です)。ただし、広告の表示(03)およびアプリ内購入(04)の際には、それぞれGoogle・Appleとの通信が発生します。</p>
+    <p class="soft">また、無料版の利用回数(分割・圧縮はそれぞれ1日1回まで)を管理するため、各機能を最後に使用した日時のみを端末内に記録します。この情報は個人を特定するものではなく、外部に送信されることもありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>端末の権限について</h2>
+    <div class="card">
+      <div class="label">カメラ</div>
+      <div class="value">「写真からPDF化」機能で書類や写真を撮影するためにのみ使用します。撮影した画像はPDF変換の目的以外に利用しません。</div>
+    </div>
+    <div class="card">
+      <div class="label">写真ライブラリ</div>
+      <div class="value">既存の写真の選択には、写真ライブラリ全体へのアクセス権限は必要ありません(選択した写真のみがアプリに渡されます)。作成したPDFや画像の保存・共有には、iOS標準の共有シートおよびファイル保存(Filesアプリ等)のみを使用しており、写真ライブラリへの書き込みは行いません。</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>広告について(Google AdMob)</h2>
+    <p>無料版の画面下部には、Google AdMobによるバナー広告を表示しています。本アプリはApp Tracking Transparency(ATT)の許可リクエストを行わず、常に非パーソナライズ広告(npa=1)のみを配信します。このため、他社アプリやウェブサイトをまたいだ広告目的のトラッキングは行われません。</p>
+    <p>一方で、非パーソナライズ広告であっても、広告の配信・表示回数の計測・不正防止などの目的で、Google社がIPアドレス、広告関連の識別子・デバイス識別子、おおよその位置情報(IPアドレスに基づくもの)、機種やOSバージョンなどのデバイス情報を取得する場合があります。詳細はGoogleのプライバシーポリシーをご確認ください。</p>
+    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google プライバシーポリシー(policies.google.com)</a></p>
+    <p class="soft">プレミアム版(アプリ内課金)をご購入いただくと、広告は表示されなくなります。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>アプリ内購入について</h2>
+    <p>プレミアム版の購入は、Appleの提供するStoreKitを通じて処理されます。お支払い情報(クレジットカード番号など)は開発者側で取得・保存することはなく、すべてAppleが管理します。購入状況の確認や復元も、Appleのアカウントに基づいて行われます。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>第三者への情報提供</h2>
+    <p>上記の広告配信(Google AdMob)およびアプリ内課金(Apple)に関する範囲を除き、開発者が取得する個人情報は存在せず、第三者への提供・共有も行いません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>お子様のプライバシー</h2>
+    <p>本アプリは特定の年齢層(お子様)を対象としたものではなく、氏名や生年月日などの入力を求める機能も設けていません。13歳未満のお子様から意図的に個人情報を収集することはありません。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>準拠法・開示等のご請求</h2>
+    <p>本ポリシーは日本法に基づいて解釈されるものとします。ご自身に関する情報の開示・訂正・利用停止等をご希望の場合は、10節の問い合わせ先までご連絡ください。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>診断・クラッシュデータについて</h2>
+    <p>開発者独自のクラッシュ解析SDKは組み込んでいませんが、Appleの提供する標準的なクラッシュレポート機能を通じて、匿名化された診断情報が収集される場合があります。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>プライバシーポリシーの変更</h2>
+    <p>法令の変更や機能追加に伴い、本ポリシーの内容を変更する場合があります。変更する際は、本ページの「最終更新」日付を更新するとともに、広告や課金に関わる重要な変更については、アプリ内の案内等でも周知するよう努めます。</p>
+    <p class="soft">本ポリシーは現在、日本語版のみを提供しています。</p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span>お問い合わせ</h2>
+    <div class="contact">
+      <div>
+        <div class="who">colorofdays(PDFむすび 開発者)</div>
+        <div class="soft" style="color:var(--ink-soft); font-size:.85rem; margin-top:4px;">個人開発者(日本在住)が運営しています。本アプリに関するご質問・不具合のご連絡は下記までお願いします</div>
+      </div>
+      <div class="mail">info@colorofdays.com</div>
+    </div>
+  </section>
+
+  <footer>
+    <span>PDFむすび プライバシーポリシー</span>
+    <span>最終更新: 2026-09-16</span>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="iPhoneアプリ「PDFむすび」のサポートページ">
+<style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<title>PDFむすび サポート</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+  :root{
+    --bg: #faf7f1;
+    --surface: #ffffff;
+    --surface-line: #e7ded0;
+    --ink: #20302c;
+    --ink-soft: #52625c;
+    --ink-faint: #8a978f;
+    --teal: #0f6b62;
+    --teal-deep: #0a4a44;
+    --teal-wash: #e4efec;
+    --coral: #d9613f;
+    --coral-wash: #fbe9e2;
+    --font-display: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", "Noto Sans JP", sans-serif;
+    --font-body: "Noto Sans JP", "Hiragino Sans", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg: #14201d;
+      --surface: #1a2925;
+      --surface-line: #2a3d37;
+      --ink: #eef3f0;
+      --ink-soft: #b6c4bd;
+      --ink-faint: #7d8d86;
+      --teal: #4fb3a6;
+      --teal-deep: #bfe9e1;
+      --teal-wash: #1f3733;
+      --coral: #e98a6c;
+      --coral-wash: #3a2620;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg: #14201d;
+    --surface: #1a2925;
+    --surface-line: #2a3d37;
+    --ink: #eef3f0;
+    --ink-soft: #b6c4bd;
+    --ink-faint: #7d8d86;
+    --teal: #4fb3a6;
+    --teal-deep: #bfe9e1;
+    --teal-wash: #1f3733;
+    --coral: #e98a6c;
+    --coral-wash: #3a2620;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.85;
+    padding-inline: 20px;
+    padding-block: 40px;
+  }
+  main{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .mark{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom: 28px;
+  }
+  .mark svg{ width:44px; height:44px; flex-shrink:0; }
+  .mark .name{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--teal-deep);
+    letter-spacing: .02em;
+  }
+  .mark .sub{
+    font-size: .78rem;
+    color: var(--ink-faint);
+    font-family: var(--font-mono);
+    letter-spacing: .04em;
+  }
+
+  header.hero{
+    border-bottom: 1px solid var(--surface-line);
+    padding-bottom: 28px;
+    margin-bottom: 32px;
+  }
+  h1{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.6rem, 5vw, 2.15rem);
+    color: var(--ink);
+    text-wrap: balance;
+    margin: 0 0 10px;
+  }
+  .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap: 10px 20px;
+    font-size: .85rem;
+    color: var(--ink-soft);
+  }
+  .meta span{ font-family: var(--font-mono); font-variant-numeric: tabular-nums; color: var(--ink-faint); }
+
+  .lede{
+    background: var(--teal-wash);
+    border: 1px solid var(--surface-line);
+    border-radius: 14px;
+    padding: 18px 20px;
+    color: var(--ink);
+    font-size: .96rem;
+    margin-bottom: 36px;
+  }
+  .lede strong{ color: var(--teal-deep); }
+
+  section{
+    margin-bottom: 34px;
+  }
+  section h2{
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--teal-deep);
+    display:flex;
+    align-items:baseline;
+    gap: 10px;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+  section h2 .num{
+    font-family: var(--font-mono);
+    font-size: .78rem;
+    color: var(--coral);
+    background: var(--coral-wash);
+    border-radius: 999px;
+    padding: 3px 9px;
+    font-variant-numeric: tabular-nums;
+  }
+  section p{ margin: 0 0 12px; color: var(--ink); max-width: 62ch; }
+  section p.soft{ color: var(--ink-soft); font-size: .92rem; }
+  section ul{ margin: 0 0 12px; padding-left: 1.3em; }
+  section li{ margin-bottom: 8px; max-width: 60ch; }
+  section li::marker{ color: var(--teal); }
+
+  .card{
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .card + .card{ margin-top: 12px; }
+  .card .label{
+    font-family: var(--font-mono);
+    font-size: .72rem;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-bottom: 4px;
+  }
+  .card .value{ color: var(--ink); font-size: .95rem; }
+
+  a{ color: var(--teal); text-decoration-color: var(--surface-line); text-underline-offset: 3px; }
+  a:hover{ text-decoration-color: var(--teal); }
+
+  .contact{
+    background: var(--surface);
+    border: 1px solid var(--surface-line);
+    border-radius: 16px;
+    padding: 24px;
+    display:flex;
+    flex-wrap:wrap;
+    gap: 20px;
+    align-items:center;
+    justify-content: space-between;
+  }
+  .contact .who{ font-family: var(--font-display); font-weight:700; font-size:1.05rem; }
+  .contact .mail{
+    font-family: var(--font-mono);
+    font-size: .95rem;
+    color: var(--teal-deep);
+    background: var(--teal-wash);
+    padding: 8px 14px;
+    border-radius: 999px;
+  }
+
+  footer{
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid var(--surface-line);
+    color: var(--ink-faint);
+    font-size: .8rem;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+
+  @media (max-width: 480px){
+    .contact{ flex-direction:column; align-items:flex-start; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark">
+    <svg viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="2" y="2" width="40" height="40" rx="11" fill="#0f6b62"/>
+      <rect x="12" y="10" width="14" height="18" rx="2.4" fill="#f3ede1"/>
+      <rect x="17" y="16" width="14" height="18" rx="2.4" fill="#f9f6ef" stroke="#0a4a44" stroke-width="1.2"/>
+      <path d="M17 25c3-2.6 7-2.6 10 0" stroke="#d9613f" stroke-width="2.2" stroke-linecap="round" fill="none"/>
+      <path d="M18.5 22.5c2-1.6 5-1.6 7 0" stroke="#d9613f" stroke-width="1.6" stroke-linecap="round" fill="none" opacity=".75"/>
+    </svg>
+    <div>
+      <div class="name">PDFむすび</div>
+      <div class="sub">com.colorofdays.pdfmusubi</div>
+    </div>
+  </div>
+  <header class="hero">
+    <h1>サポート</h1>
+    <div class="meta"><span>開発 colorofdays(個人開発)</span></div>
+  </header>
+
+  <div class="lede">PDFむすびは、PDFの結合・分割・圧縮と、写真からのPDF化ができるiPhoneアプリです。変換はすべて端末の中で行います。使い方で困ったときや不具合に気づいたときは、下記までご連絡ください。</div>
+
+  <section>
+    <h2><span class="num">01</span>お問い合わせ</h2>
+    <div class="contact">
+      <div>
+        <div class="who">colorofdays(PDFむすび 開発者)</div>
+        <div class="soft" style="color:var(--ink-soft); font-size:.85rem; margin-top:4px;">個人開発者(日本在住)が運営しています。返信まで数日いただくことがあります。</div>
+      </div>
+      <div class="mail">info@colorofdays.com</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>よくある質問</h2>
+    <div class="card">
+      <div class="label">広告を消すには</div>
+      <div class="value">プレミアム版(アプリ内課金)をご購入いただくと、広告は表示されなくなります。</div>
+    </div>
+    <div class="card">
+      <div class="label">機種変更でプレミアム版が外れた</div>
+      <div class="value">購入時と同じApple Accountでサインインし、アプリ内の「購入を復元」を押すと、追加料金なしで元に戻ります。</div>
+    </div>
+    <div class="card">
+      <div class="label">選んだファイルは外部に送られますか</div>
+      <div class="value">送られません。結合・分割・圧縮・写真からのPDF化は、すべてお使いの端末内で行います。</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>プライバシーポリシー</h2>
+    <p><a href="privacy.html">PDFむすび プライバシーポリシー</a></p>
+  </section>
+
+  <footer>
+    <span>PDFむすび サポート</span>
+    <span>© 2026 colorofdays</span>
+  </footer>
+</main>
+</body>
+</html>
