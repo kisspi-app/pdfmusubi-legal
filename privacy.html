@@ -3,9 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="iPhoneアプリ「PDFむすび」のプライバシーポリシー">
+<meta name="description" content="iPhoneアプリ「PDFむすび」のプライバシーポリシー / Privacy Policy for the iPhone app PDF Musubi">
 <style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
-<title>PDFむすび プライバシーポリシー</title>
+<title>PDFむすび Privacy Policy</title>
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
 <style>
@@ -205,10 +206,16 @@
     gap:8px;
   }
 
+  .langs{ display:flex; gap:8px; margin: -12px 0 28px; font-size:.85rem; }
+  .langs a{ padding:4px 12px; border:1px solid var(--surface-line); border-radius:999px; text-decoration:none; background:var(--surface); }
+  .en-block{ margin-top: 56px; padding-top: 36px; border-top: 2px solid var(--surface-line); }
+  .en-block h1{ font-family: var(--font-body); }
+
   @media (max-width: 480px){
     .contact{ flex-direction:column; align-items:flex-start; }
   }
 </style>
+
 </head>
 <body>
 <main>
@@ -226,6 +233,12 @@
     </div>
   </div>
 
+  <nav class="langs" aria-label="Language">
+    <a href="#ja" lang="ja">日本語</a>
+    <a href="#en" lang="en">English</a>
+  </nav>
+
+  <div id="ja" lang="ja">
   <header class="hero">
     <h1>プライバシーポリシー</h1>
     <div class="meta">
@@ -235,21 +248,21 @@
   </header>
 
   <div class="lede">
-    <strong>要点:</strong> PDFむすびは、アカウント登録やログインを必要とせず、結合・分割・圧縮・写真からのPDF化といったPDFの変換処理そのものは、すべてお使いの端末内だけで完結します。変換対象として選んだファイルや写真の内容が、これらの処理のために外部へ送信されることはありません。なお、広告の表示および購入処理に関しては、下記03・04の範囲で外部との通信が発生します。
+    <strong>要点:</strong> PDFむすびは、アカウント登録やログインを必要とせず、結合・分割・圧縮・ページ編集・写真からのPDF化・書類スキャンといったPDFの変換処理そのものは、すべてお使いの端末内だけで完結します。変換対象として選んだファイルや写真の内容が、これらの処理のために外部へ送信されることはありません。なお、広告の表示および購入処理に関しては、下記03・04の範囲で外部との通信が発生します。
   </div>
 
   <section>
     <h2><span class="num">01</span>収集する情報</h2>
     <p>PDFむすびは、氏名・メールアドレス・位置情報などの個人情報の入力や登録を求めません。アプリ内で選択・撮影したPDFファイルや写真、それらから生成したPDFデータは、すべて端末内のストレージにのみ保存され、これらの変換処理のために開発者や第三者のサーバーへ送信・アップロードされることはありません。</p>
-    <p class="soft">結合・分割・圧縮・写真からのPDF化といったPDFの変換処理そのものは、いずれもオフラインで動作します(インターネット接続は不要です)。ただし、広告の表示(03)およびアプリ内購入(04)の際には、それぞれGoogle・Appleとの通信が発生します。</p>
-    <p class="soft">また、無料版の利用回数(分割・圧縮はそれぞれ1日1回まで)を管理するため、各機能を最後に使用した日時のみを端末内に記録します。この情報は個人を特定するものではなく、外部に送信されることもありません。</p>
+    <p class="soft">結合・分割・圧縮・ページ編集・写真からのPDF化・書類スキャンといったPDFの変換処理そのものは、いずれもオフラインで動作します(インターネット接続は不要です)。ただし、広告の表示(03)およびアプリ内購入(04)の際には、それぞれGoogle・Appleとの通信が発生します。</p>
+    <p class="soft">また、無料版の利用回数(分割・圧縮・ページ編集はそれぞれ1日1回まで)を管理するため、各機能を最後に使用した日時のみを端末内に記録します。あわせて、App Storeのレビュー依頼(iOS標準の評価画面)を表示するタイミングを決めるため、PDFを作成した回数と、最後にレビュー依頼を表示したアプリのバージョンを端末内に記録します。これらの情報は個人を特定するものではなく、外部に送信されることもありません。</p>
   </section>
 
   <section>
     <h2><span class="num">02</span>端末の権限について</h2>
     <div class="card">
       <div class="label">カメラ</div>
-      <div class="value">「写真からPDF化」機能で書類や写真を撮影するためにのみ使用します。撮影した画像はPDF変換の目的以外に利用しません。</div>
+      <div class="value">「写真からPDF化」機能で書類や写真を撮影するため、および「書類をスキャン」で紙の書類を読み取るためにのみ使用します。書類スキャンはiOS標準の書類スキャナー機能を使い、四隅の検出や傾きの補正を含めてすべて端末内で処理します。撮影・スキャンした画像を外部に送信することはなく、写真ライブラリにも保存しません。PDF変換の目的以外には利用しません。</div>
     </div>
     <div class="card">
       <div class="label">写真ライブラリ</div>
@@ -293,7 +306,7 @@
   <section>
     <h2><span class="num">09</span>プライバシーポリシーの変更</h2>
     <p>法令の変更や機能追加に伴い、本ポリシーの内容を変更する場合があります。変更する際は、本ページの「最終更新」日付を更新するとともに、広告や課金に関わる重要な変更については、アプリ内の案内等でも周知するよう努めます。</p>
-    <p class="soft">本ポリシーは現在、日本語版のみを提供しています。</p>
+    <p class="soft">本ポリシーは日本語版と英語版を提供しています。内容に相違がある場合は、日本語版を優先します。</p>
   </section>
 
   <section>
@@ -307,9 +320,94 @@
     </div>
   </section>
 
+  </div>
+
+  <div id="en" lang="en" class="en-block">
+  <header class="hero">
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span>Effective 2026-09-16</span>
+      <span>Developer: colorofdays (independent developer)</span>
+    </div>
+  </header>
+
+  <div class="lede">
+    <strong>Summary:</strong> PDF Musubi does not require an account or sign-in. PDF processing itself — merging, splitting, compressing, editing pages, converting photos to PDF, and scanning documents — is done entirely on your device. The files and photos you choose are not sent anywhere for this processing. Network communication does occur for showing ads and for purchases, as described in sections 03 and 04.
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>Information we collect</h2>
+    <p>PDF Musubi does not ask you to enter or register personal information such as your name, email address, or location. PDF files and photos you choose or capture in the app, and the PDFs created from them, are stored only on your device and are not sent or uploaded to the developer's or any third party's servers for processing.</p>
+    <p class="soft">PDF processing (merging, splitting, compressing, editing pages, converting photos to PDF, and scanning documents) works offline; no internet connection is required. However, showing ads (03) and in-app purchases (04) involve communication with Google and Apple respectively.</p>
+    <p class="soft">To manage the free version's limits (Split, Compress, and Edit Pages once per day each), the app stores on your device only the date and time each feature was last used. To decide when to show the App Store review request (the standard iOS rating prompt), the app also stores on your device the number of PDFs you have created and the app version in which the request was last shown. This information does not identify you and is not sent off your device.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Device permissions</h2>
+    <div class="card">
+      <div class="label">Camera</div>
+      <div class="value">Used only to take photos in "Photos to PDF" and to capture paper documents with "Scan Document." Document scanning uses the iOS built-in document scanner, and edge detection and straightening are processed on your device. Captured and scanned images are not sent anywhere and are not saved to your photo library. They are used only to create PDFs.</div>
+    </div>
+    <div class="card">
+      <div class="label">Photo library</div>
+      <div class="value">Choosing existing photos does not require access to your whole photo library; only the photos you select are passed to the app. Created PDFs and images are saved and shared only through the standard iOS share sheet and file saving (such as the Files app). The app does not write to your photo library.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Ads (Google AdMob)</h2>
+    <p>The free version shows banner ads from Google AdMob at the bottom of the screen. The app does not request App Tracking Transparency (ATT) permission and always requests non-personalized ads only (npa=1). Therefore, no tracking for advertising purposes across other companies' apps or websites is performed.</p>
+    <p>Even for non-personalized ads, Google may collect information such as your IP address, advertising-related and device identifiers, approximate location (based on IP address), and device information such as model and OS version, for purposes including ad delivery, measuring impressions, and preventing fraud. Please see Google's Privacy Policy for details.</p>
+    <p><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy (policies.google.com)</a></p>
+    <p class="soft">If you purchase Premium (in-app purchase), ads are no longer shown.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>In-app purchases</h2>
+    <p>Premium purchases are processed through Apple's StoreKit. The developer does not obtain or store payment information (such as credit card numbers); it is managed by Apple. Checking and restoring purchases are based on your Apple account.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Sharing with third parties</h2>
+    <p>Apart from ad delivery (Google AdMob) and in-app purchases (Apple) described above, the developer does not obtain any personal information and does not provide or share it with third parties.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>Children's privacy</h2>
+    <p>This app is not directed at any particular age group (such as children) and has no features that ask for a name or date of birth. We do not knowingly collect personal information from children under 13.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>Governing law and requests</h2>
+    <p>This policy is governed by the laws of Japan. If you would like to request disclosure, correction, or suspension of use of information about you, please contact us using the details in section 10.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>Diagnostics and crash data</h2>
+    <p>The app does not include the developer's own crash analytics SDK, but anonymized diagnostic information may be collected through Apple's standard crash reporting.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>Changes to this policy</h2>
+    <p>We may change this policy due to changes in law or new features. When we do, we will update the "Last updated" date on this page and, for important changes related to ads or purchases, we will make efforts to notify you within the app as well.</p>
+    <p class="soft">This policy is available in Japanese and English. If there is any discrepancy, the Japanese version prevails.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">10</span>Contact</h2>
+    <div class="contact">
+      <div>
+        <div class="who">colorofdays (developer of PDF Musubi)</div>
+        <div class="soft" style="color:var(--ink-soft); font-size:.85rem; margin-top:4px;">Run by an independent developer based in Japan. Please send questions or bug reports about this app to the address below.</div>
+      </div>
+      <div class="mail">info@colorofdays.com</div>
+    </div>
+  </section>
+  </div>
+
   <footer>
-    <span>PDFむすび プライバシーポリシー</span>
-    <span>最終更新: 2026-09-16</span>
+    <span>PDFむすび プライバシーポリシー / PDF Musubi Privacy Policy</span>
+    <span>最終更新 / Last updated: 2026-10-30</span>
   </footer>
 </main>
 </body>

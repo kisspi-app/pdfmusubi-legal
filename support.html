@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="description" content="iPhoneアプリ「PDFむすび」のサポートページ">
+<meta name="description" content="iPhoneアプリ「PDFむすび」のサポートページ / Support for the iPhone app PDF Musubi">
 <style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
-<title>PDFむすび サポート</title>
+<title>PDFむすび Support</title>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@500&display=swap">
 <style>
@@ -205,6 +205,11 @@
     gap:8px;
   }
 
+  .langs{ display:flex; gap:8px; margin: -12px 0 28px; font-size:.85rem; }
+  .langs a{ padding:4px 12px; border:1px solid var(--surface-line); border-radius:999px; text-decoration:none; background:var(--surface); }
+  .en-block{ margin-top: 56px; padding-top: 36px; border-top: 2px solid var(--surface-line); }
+  .en-block h1{ font-family: var(--font-body); }
+
   @media (max-width: 480px){
     .contact{ flex-direction:column; align-items:flex-start; }
   }
@@ -225,12 +230,18 @@
       <div class="sub">com.colorofdays.pdfmusubi</div>
     </div>
   </div>
+  <nav class="langs" aria-label="Language">
+    <a href="#ja" lang="ja">日本語</a>
+    <a href="#en" lang="en">English</a>
+  </nav>
+
+  <div id="ja" lang="ja">
   <header class="hero">
     <h1>サポート</h1>
     <div class="meta"><span>開発 colorofdays(個人開発)</span></div>
   </header>
 
-  <div class="lede">PDFむすびは、PDFの結合・分割・圧縮と、写真からのPDF化ができるiPhoneアプリです。変換はすべて端末の中で行います。使い方で困ったときや不具合に気づいたときは、下記までご連絡ください。</div>
+  <div class="lede">PDFむすびは、PDFの結合・分割・圧縮・ページ編集と、写真や書類スキャンからのPDF化ができるiPhoneアプリです。変換はすべて端末の中で行います。使い方で困ったときや不具合に気づいたときは、下記までご連絡ください。</div>
 
   <section>
     <h2><span class="num">01</span>お問い合わせ</h2>
@@ -255,7 +266,7 @@
     </div>
     <div class="card">
       <div class="label">選んだファイルは外部に送られますか</div>
-      <div class="value">送られません。結合・分割・圧縮・写真からのPDF化は、すべてお使いの端末内で行います。</div>
+      <div class="value">送られません。結合・分割・圧縮・ページ編集・写真からのPDF化・書類スキャンは、すべてお使いの端末内で行います。</div>
     </div>
   </section>
 
@@ -263,9 +274,51 @@
     <h2><span class="num">03</span>プライバシーポリシー</h2>
     <p><a href="privacy.html">PDFむすび プライバシーポリシー</a></p>
   </section>
+  </div>
+
+  <div id="en" lang="en" class="en-block">
+  <header class="hero">
+    <h1>Support</h1>
+    <div class="meta"><span>Developer: colorofdays (independent developer)</span></div>
+  </header>
+
+  <div class="lede">PDF Musubi is an iPhone app for merging, splitting, compressing, and editing PDF pages, and for turning photos and scanned documents into PDFs. Processing happens on your device. If you have a question or find a bug, please contact us below.</div>
+
+  <section>
+    <h2><span class="num">01</span>Contact</h2>
+    <div class="contact">
+      <div>
+        <div class="who">colorofdays (developer of PDF Musubi)</div>
+        <div class="soft" style="color:var(--ink-soft); font-size:.85rem; margin-top:4px;">Run by an independent developer based in Japan. A reply may take a few days.</div>
+      </div>
+      <div class="mail">info@colorofdays.com</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>FAQ</h2>
+    <div class="card">
+      <div class="label">How do I remove ads?</div>
+      <div class="value">Purchase Premium (in-app purchase) and ads are no longer shown.</div>
+    </div>
+    <div class="card">
+      <div class="label">Premium disappeared after changing devices</div>
+      <div class="value">Sign in with the same Apple Account you used to purchase, then tap "Restore Purchase" in the app. It is restored at no extra cost.</div>
+    </div>
+    <div class="card">
+      <div class="label">Are my files sent anywhere?</div>
+      <div class="value">No. Merging, splitting, compressing, editing pages, converting photos to PDF, and scanning documents are done on your device.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Privacy Policy</h2>
+    <p><a href="privacy.html#en">PDF Musubi Privacy Policy</a></p>
+  </section>
+  </div>
 
   <footer>
-    <span>PDFむすび サポート</span>
+    <span>PDFむすび サポート / PDF Musubi Support</span>
     <span>© 2026 colorofdays</span>
   </footer>
 </main>
